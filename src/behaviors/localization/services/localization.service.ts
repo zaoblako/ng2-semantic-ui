@@ -37,7 +37,7 @@ export class SuiLocalizationService {
     constructor() {
         this.onLanguageUpdate = new EventEmitter<void>();
 
-        this._fallbackValues = enGB;
+        this._fallbackValues = ru;
         this._values = {};
         this._language = "ru";
         this.load("ru", ru);
