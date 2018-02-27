@@ -1,11 +1,11 @@
-import { IPartialLocaleValues } from "../interfaces/values";
+import { ILocaleValues } from "../interfaces/values";
 
 /**
  * locale : Russian (ru)
  * author : Maksim Moiseikin : https://github.com/maksim-m
  */
 
-const ru:IPartialLocaleValues = {
+const ru:ILocaleValues = {
     datepicker: {
         months: [
             "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
@@ -21,6 +21,15 @@ const ru:IPartialLocaleValues = {
         ],
         weekdaysNarrow: [
             "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
+        ],
+        timesOfDay: [
+            "", ""
+        ],
+        timesOfDayUppercase: [
+            "", ""
+        ],
+        timesOfDayLowercase: [
+            "", ""
         ],
         formats: {
             time: "HH:mm",

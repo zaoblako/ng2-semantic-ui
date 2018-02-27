@@ -3,54 +3,54 @@ import { ILocaleValues } from "../interfaces/values";
 const enGB:ILocaleValues = {
     datepicker: {
         months: [
-            "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+            "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
         ],
         monthsShort: [
-            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+            "Янв", "Февр", "Март", "Апр", "Май", "Июнь", "Июль", "Авг", "Сент", "Окт", "Ноя", "Дек"
         ],
         weekdays: [
-            "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+            "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"
         ],
         weekdaysShort: [
-            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+            "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
         ],
         weekdaysNarrow: [
-            "S", "M", "T", "W", "T", "F", "S"
+            "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
         ],
         timesOfDay: [
-            "a.m.", "p.m."
+            "", ""
         ],
         timesOfDayUppercase: [
-            "AM", "PM"
+            "", ""
         ],
         timesOfDayLowercase: [
-            "am", "pm"
+            "", ""
         ],
         formats: {
-            time: "h:mm A",
-            datetime: "D MMMM YYYY h:mm A",
-            date: "D MMMM YYYY",
+            time: "HH:mm",
+            datetime: "DD.MM.YYYY HH:mm",
+            date: "DD.MM.YYYY",
             month: "MMMM YYYY",
             year: "YYYY"
         },
         firstDayOfWeek: 1
     },
     search: {
-        placeholder: "Search...",
+        placeholder: "Поиск...",
         noResults: {
-            header: "No Results",
-            message: "Your search returned no results."
+            header: "Нет результатов",
+            message: "Поиск не дал результатов."
         }
     },
     select: {
-        noResultsMessage: "No results",
+        noResultsMessage: "Нет результатов",
         single: {
-            placeholder: "Select one"
+            placeholder: "Выберите одно значение"
         },
         multi: {
-            placeholder: "Select...",
-            maxSelectedMessage: "Max #{max} selections",
-            selectedMessage: "#{count} selections"
+            placeholder: "Выберите...",
+            maxSelectedMessage: "Не более #{max} значений",
+            selectedMessage: "выбрано #{count}"
         }
     }
 };
