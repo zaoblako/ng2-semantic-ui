@@ -36,7 +36,6 @@
     "build:lib": "npm run lint:lib && npm run compile:lib && npm run package:lib",
     "build:demo": "npm run lint && npm run compile",
     "build": "npm run lint && npm run compile && npm run package:lib",
-    "prepare": "npm run compile && npm run package:lib",
     "test": "ng test",
     "test:cov": "ng test --code-coverage true",
     "test:w": "ng test --single-run false --browsers Chrome --reporters kjhtml"
