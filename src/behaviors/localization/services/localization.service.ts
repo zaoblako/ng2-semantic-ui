@@ -1,6 +1,6 @@
 import { Injectable, EventEmitter } from "@angular/core";
 import { ILocaleValues, IPartialLocaleValues, RecursivePartial } from "../interfaces/values";
-import enGB from "../locales/en-GB";
+import ru from "../locales/ru";
 import * as $extend from "extend";
 
 function deepClone<T>(obj:T):T {
@@ -39,8 +39,8 @@ export class SuiLocalizationService {
 
         this._fallbackValues = enGB;
         this._values = {};
-        this._language = "en-GB";
-        this.load("en-GB", enGB);
+        this._language = "ru";
+        this.load("ru", ru);
     }
 
     public setLanguage(language:string):void {
