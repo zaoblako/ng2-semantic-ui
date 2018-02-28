@@ -7,54 +7,54 @@
 var enGB = {
     datepicker: {
         months: [
-            "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+            "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
         ],
         monthsShort: [
-            "Янв", "Февр", "Март", "Апр", "Май", "Июнь", "Июль", "Авг", "Сент", "Окт", "Ноя", "Дек"
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         ],
         weekdays: [
-            "Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"
+            "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
         ],
         weekdaysShort: [
-            "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
+            "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
         ],
         weekdaysNarrow: [
-            "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
+            "S", "M", "T", "W", "T", "F", "S"
         ],
         timesOfDay: [
-            "", ""
+            "a.m.", "p.m."
         ],
         timesOfDayUppercase: [
-            "", ""
+            "AM", "PM"
         ],
         timesOfDayLowercase: [
-            "", ""
+            "am", "pm"
         ],
         formats: {
-            time: "HH:mm",
-            datetime: "DD.MM.YYYY HH:mm",
-            date: "DD.MM.YYYY",
+            time: "h:mm A",
+            datetime: "D MMMM YYYY h:mm A",
+            date: "D MMMM YYYY",
             month: "MMMM YYYY",
             year: "YYYY"
         },
         firstDayOfWeek: 1
     },
     search: {
-        placeholder: "Поиск...",
+        placeholder: "Search...",
         noResults: {
-            header: "Нет результатов",
-            message: "Поиск не дал результатов."
+            header: "No Results",
+            message: "Your search returned no results."
         }
     },
     select: {
-        noResultsMessage: "Нет результатов",
+        noResultsMessage: "No results",
         single: {
-            placeholder: "Выберите одно значение"
+            placeholder: "Select one"
         },
         multi: {
-            placeholder: "Выберите...",
-            maxSelectedMessage: "Не более #{max} значений",
-            selectedMessage: "выбрано #{count}"
+            placeholder: "Select...",
+            maxSelectedMessage: "Max #{max} selections",
+            selectedMessage: "#{count} selections"
         }
     }
 };
@@ -675,7 +675,6 @@ exports.SuiPagination = (function () {
         },
         set: function (value) {
             this._collectionSize = Math.max(value, 0);
-            this.pageCount = Math.max(1, Math.ceil(this._collectionSize / this.pageSize));
         },
         enumerable: true,
         configurable: true
@@ -778,13 +777,13 @@ __decorate$6([
 ], exports.SuiPagination.prototype, "maxSize", null);
 __decorate$6([
     _angular_core.Input(),
-    __metadata$3("design:type", Number)
-], exports.SuiPagination.prototype, "pageSize", void 0);
-__decorate$6([
-    _angular_core.Input(),
     __metadata$3("design:type", Number),
     __metadata$3("design:paramtypes", [Number])
 ], exports.SuiPagination.prototype, "collectionSize", null);
+__decorate$6([
+    _angular_core.Input(),
+    __metadata$3("design:type", Number)
+], exports.SuiPagination.prototype, "pageSize", void 0);
 __decorate$6([
     _angular_core.Input(),
     __metadata$3("design:type", Boolean),

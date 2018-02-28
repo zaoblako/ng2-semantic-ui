@@ -1,7 +1,7 @@
-import { ILocaleValues } from "../dist";
+import { IPartialLocaleValues } from "../dist";
 /**
  * locale : Russian (ru)
  * author : Maksim Moiseikin : https://github.com/maksim-m
  */
-declare const ru: ILocaleValues;
+declare const ru: IPartialLocaleValues;
 export default ru;

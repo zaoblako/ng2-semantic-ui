@@ -8,7 +8,7 @@ declare const _default: {
     it: RecursivePartial<ILocaleValues>;
     fr: RecursivePartial<ILocaleValues>;
     pt: RecursivePartial<ILocaleValues>;
-    ru: ILocaleValues;
+    ru: RecursivePartial<ILocaleValues>;
     he: RecursivePartial<ILocaleValues>;
     ge: RecursivePartial<ILocaleValues>;
     nl: RecursivePartial<ILocaleValues>;

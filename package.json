@@ -1,52 +1,36 @@
 {
-  "name": "ng2-semantic-ui",
-  "main": "bundles/ng2-semantic-ui.umd.min.js",
-  "module": "dist/public.js",
-  "typings": "dist/public.d.ts",
-  "version": "0.9.7",
-  "description": "Angular 2 Semantic UI Components",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zaoblako/ng2-semantic-ui/tree/master"
+  "_from": "ng2-semantic-ui",
+  "_id": "ng2-semantic-ui@0.9.6",
+  "_inBundle": false,
+  "_integrity": "sha512-2SUarsmKeyr3RUudlBC0jVECAqURnXgJlz4JxON+aW4xwPxdxFJ0ix6FosJ0/sbq3z8zuCrMwtBIxNADk/sKFg==",
+  "_location": "/ng2-semantic-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ng2-semantic-ui",
+    "name": "ng2-semantic-ui",
+    "escapedName": "ng2-semantic-ui",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng2-semantic-ui/-/ng2-semantic-ui-0.9.6.tgz",
+  "_shasum": "9bdc5aa379466ca2bcef09db3867817cec085538",
+  "_spec": "ng2-semantic-ui",
+  "_where": "/Volumes/DATA/Developer/olissys/e2b.web",
+  "angular-cli": {},
+  "author": {
+    "name": "Edward Carroll"
   },
   "bugs": {
-    "url": "https://github.com/zaoblako/ng2-semantic-ui/tree/master/issues"
+    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master/issues"
   },
-  "author": "Edward Carroll",
-  "keywords": [
-    "angular",
-    "angular-components",
-    "semantic-ui",
-    "no-jquery",
-    "ui",
-    "typescript"
-  ],
-  "license": "MIT",
-  "angular-cli": {},
-  "scripts": {
-    "run:demo": "ng serve",
-    "lint:lib": "tslint -c tslint.json --type-check --project src/tsconfig.json",
-    "lint:demo": "tslint -c tslint.json --type-check --project demo/src/tsconfig.json",
-    "lint": "npm run lint:lib & npm run lint:demo",
-    "compile:lib": "node ./scripts/clean && tsc -p src/tsconfig.json && ngc -p src/tsconfig.json",
-    "compile:lib:w": "tsc -p src/tsconfig.json -w",
-    "compile:demo": "ng build --prod --base-href=/ng2-semantic-ui/",
-    "compile": "npm run compile:lib && npm run compile:demo",
-    "package:lib": "node ./scripts/bundle && node ./scripts/locales",
-    "build:lib": "npm run lint:lib && npm run compile:lib && npm run package:lib",
-    "build:demo": "npm run lint && npm run compile",
-    "build": "npm run lint && npm run compile && npm run package:lib",
-    "test": "ng test",
-    "test:cov": "ng test --code-coverage true",
-    "test:w": "ng test --single-run false --browsers Chrome --reporters kjhtml"
-  },
-  "peerDependencies": {
-    "@angular/common": "^4.3.1 || >= 5.0.0-beta",
-    "@angular/compiler": "^4.3.1 || >= 5.0.0-beta",
-    "@angular/core": "^4.3.1 || >= 5.0.0-beta",
-    "@angular/forms": "^4.3.1 || >= 5.0.0-beta",
-    "typescript": "~2.3.0"
-  },
+  "bundleDependencies": false,
   "dependencies": {
     "bowser": "^1.7.2",
     "date-fns": "2.0.0-alpha.1",
@@ -56,6 +40,8 @@
     "popper.js": "^1.11.1",
     "rxjs": "^5.0.1"
   },
+  "deprecated": false,
+  "description": "Angular 2 Semantic UI Components",
   "devDependencies": {
     "@angular/cli": "~1.2.8",
     "@angular/common": "^4.3.1",
@@ -94,5 +80,48 @@
     "typescript": "~2.3.4",
     "web-animations-js": "^2.2.5",
     "zone.js": "^0.8.4"
-  }
+  },
+  "keywords": [
+    "angular",
+    "angular-components",
+    "semantic-ui",
+    "no-jquery",
+    "ui",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "bundles/ng2-semantic-ui.umd.min.js",
+  "module": "dist/public.js",
+  "name": "ng2-semantic-ui",
+  "peerDependencies": {
+    "@angular/common": "^4.3.1 || >= 5.0.0-beta",
+    "@angular/compiler": "^4.3.1 || >= 5.0.0-beta",
+    "@angular/core": "^4.3.1 || >= 5.0.0-beta",
+    "@angular/forms": "^4.3.1 || >= 5.0.0-beta",
+    "typescript": "~2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run compile && npm run package:lib",
+    "build:demo": "npm run lint && npm run compile",
+    "build:lib": "npm run lint:lib && npm run compile:lib && npm run package:lib",
+    "compile": "npm run compile:lib && npm run compile:demo",
+    "compile:demo": "ng build --prod --base-href=/ng2-semantic-ui/",
+    "compile:lib": "node ./scripts/clean && tsc -p src/tsconfig.json && ngc -p src/tsconfig.json",
+    "compile:lib:w": "tsc -p src/tsconfig.json -w",
+    "lint": "npm run lint:lib & npm run lint:demo",
+    "lint:demo": "tslint -c tslint.json --type-check --project demo/src/tsconfig.json",
+    "lint:lib": "tslint -c tslint.json --type-check --project src/tsconfig.json",
+    "package:lib": "node ./scripts/bundle && node ./scripts/locales",
+    "prepublishOnly": "npm run build",
+    "run:demo": "ng serve",
+    "test": "ng test",
+    "test:cov": "ng test --code-coverage true",
+    "test:w": "ng test --single-run false --browsers Chrome --reporters kjhtml"
+  },
+  "typings": "dist/public.d.ts",
+  "version": "0.9.6"
 }
