@@ -1,4 +1,5 @@
 import { EventEmitter } from "@angular/core";
+import Popper from 'popper.js';
 export declare type SidebarTransition = "overlay" | "push" | "scale down" | "uncover" | "slide along" | "slide out";
 export declare const SidebarTransition: {
     Overlay: SidebarTransition;
