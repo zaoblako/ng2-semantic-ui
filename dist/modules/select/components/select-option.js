@@ -42,7 +42,7 @@ var SuiSelectOption = (function (_super) {
                 this.renderedText = formatter(this.value);
             }
             else {
-                this.renderedText = undefined;
+                this.renderedText = "";
             }
         },
         enumerable: true,

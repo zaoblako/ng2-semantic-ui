@@ -1,5 +1,4 @@
 import { EventEmitter } from "@angular/core";
-import Popper from 'popper.js';
 export declare type SidebarTransition = "overlay" | "push" | "scale down" | "uncover" | "slide along" | "slide out";
 export declare const SidebarTransition: {
     Overlay: SidebarTransition;
@@ -11,10 +10,10 @@ export declare const SidebarTransition: {
 };
 export declare type SidebarDirection = "left" | "right" | "top" | "bottom";
 export declare const SidebarDirection: {
-    Left: Popper.Position;
-    Right: Popper.Position;
-    Top: Popper.Position;
-    Bottom: Popper.Position;
+    Left: "left" | "right" | "top" | "bottom";
+    Right: "left" | "right" | "top" | "bottom";
+    Top: "left" | "right" | "top" | "bottom";
+    Bottom: "left" | "right" | "top" | "bottom";
 };
 export declare class SidebarService {
     isVisible: boolean;

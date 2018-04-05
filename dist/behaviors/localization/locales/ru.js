@@ -19,6 +19,15 @@ var ru = {
         weekdaysNarrow: [
             "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
         ],
+        timesOfDay: [
+            "", ""
+        ],
+        timesOfDayUppercase: [
+            "", ""
+        ],
+        timesOfDayLowercase: [
+            "", ""
+        ],
         formats: {
             time: "HH:mm",
             datetime: "DD.MM.YYYY HH:mm",

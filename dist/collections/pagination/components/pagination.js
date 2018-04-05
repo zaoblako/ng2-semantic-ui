@@ -37,6 +37,7 @@ var SuiPagination = (function () {
         },
         set: function (value) {
             this._collectionSize = Math.max(value, 0);
+            this.pageCount = Math.max(1, Math.ceil(this._collectionSize / this.pageSize));
         },
         enumerable: true,
         configurable: true
@@ -139,13 +140,13 @@ __decorate([
 ], SuiPagination.prototype, "maxSize", null);
 __decorate([
     Input(),
+    __metadata("design:type", Number)
+], SuiPagination.prototype, "pageSize", void 0);
+__decorate([
+    Input(),
     __metadata("design:type", Number),
     __metadata("design:paramtypes", [Number])
 ], SuiPagination.prototype, "collectionSize", null);
-__decorate([
-    Input(),
-    __metadata("design:type", Number)
-], SuiPagination.prototype, "pageSize", void 0);
 __decorate([
     Input(),
     __metadata("design:type", Boolean),

@@ -9,8 +9,8 @@ export declare class SuiPagination implements OnChanges {
     private _pages;
     private _hasNavigationLinks;
     maxSize: number | undefined;
-    collectionSize: number;
     pageSize: number;
+    collectionSize: number;
     hasNavigationLinks: boolean;
     hasBoundaryLinks: boolean;
     canRotate: boolean;

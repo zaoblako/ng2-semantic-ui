@@ -1,7 +1,7 @@
-import { IPartialLocaleValues } from "../interfaces/values";
+import { ILocaleValues } from "../interfaces/values";
 /**
  * locale : Russian (ru)
  * author : Maksim Moiseikin : https://github.com/maksim-m
  */
-declare const ru: IPartialLocaleValues;
+declare const ru: ILocaleValues;
 export default ru;

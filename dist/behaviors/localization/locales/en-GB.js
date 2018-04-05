@@ -15,6 +15,15 @@ var enGB = {
         weekdaysNarrow: [
             "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
         ],
+        timesOfDay: [
+            "", ""
+        ],
+        timesOfDayUppercase: [
+            "", ""
+        ],
+        timesOfDayLowercase: [
+            "", ""
+        ],
         formats: {
             time: "HH:mm",
             datetime: "DD.MM.YYYY HH:mm",
@@ -22,12 +31,6 @@ var enGB = {
             month: "MMMM YYYY",
             year: "YYYY"
         },
-        timesOfDay: [
-            "a.m.", "p.m."
-        ],
-        timesOfDayUppercase: [
-            "AM", "PM"
-        ],
         firstDayOfWeek: 1
     },
     search: {
@@ -45,7 +48,7 @@ var enGB = {
         multi: {
             placeholder: "Выберите...",
             maxSelectedMessage: "Не более #{max} значений",
-            selectedMessage: "#{count} selections"
+            selectedMessage: "выбрано #{count}"
         }
     }
 };

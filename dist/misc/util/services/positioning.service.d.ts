@@ -1,5 +1,5 @@
 import { ElementRef } from "@angular/core";
-import Popper from "popper.js";
+import { Data } from "popper.js";
 export declare type PositioningPlacement = "auto" | "top left" | "top" | "top right" | "bottom left" | "bottom" | "bottom right" | "left top" | "left" | "left bottom" | "right top" | "right" | "right bottom";
 export declare const PositioningPlacement: {
     Auto: PositioningPlacement;
@@ -32,7 +32,7 @@ export declare class PositioningService {
     private _placement;
     placement: PositioningPlacement;
     readonly actualPlacement: PositioningPlacement;
-    readonly state: Popper.Data;
+    readonly state: Data;
     constructor(anchor: ElementRef, subject: ElementRef, placement: PositioningPlacement, arrowSelector?: string);
     update(): void;
     destroy(): void;
