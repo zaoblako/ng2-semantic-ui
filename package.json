@@ -123,5 +123,5 @@
     "test:w": "ng test --single-run false --browsers Chrome --reporters kjhtml"
   },
   "typings": "dist/public.d.ts",
-  "version": "0.9.6"
+  "version": "0.9.11"
 }
