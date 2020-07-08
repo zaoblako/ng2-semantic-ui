@@ -1,28 +1,4 @@
 {
-  "_from": "ng2-semantic-ui",
-  "_id": "ng2-semantic-ui@0.9.6",
-  "_inBundle": false,
-  "_integrity": "sha512-2SUarsmKeyr3RUudlBC0jVECAqURnXgJlz4JxON+aW4xwPxdxFJ0ix6FosJ0/sbq3z8zuCrMwtBIxNADk/sKFg==",
-  "_location": "/ng2-semantic-ui",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "ng2-semantic-ui",
-    "name": "ng2-semantic-ui",
-    "escapedName": "ng2-semantic-ui",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ng2-semantic-ui/-/ng2-semantic-ui-0.9.6.tgz",
-  "_shasum": "9bdc5aa379466ca2bcef09db3867817cec085538",
-  "_spec": "ng2-semantic-ui",
-  "_where": "/Volumes/DATA/Developer/olissys/e2b.web",
   "angular-cli": {},
   "author": {
     "name": "Edward Carroll"
@@ -92,17 +68,13 @@
   "license": "MIT",
   "main": "bundles/ng2-semantic-ui.umd.min.js",
   "module": "dist/public.js",
-  "name": "ng2-semantic-ui",
+  "name": "ng2-semantic-ui-zaoblako",
   "peerDependencies": {
     "@angular/common": "^4.3.1 || >= 5.0.0-beta",
     "@angular/compiler": "^4.3.1 || >= 5.0.0-beta",
     "@angular/core": "^4.3.1 || >= 5.0.0-beta",
     "@angular/forms": "^4.3.1 || >= 5.0.0-beta",
     "typescript": "~2.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/edcarroll/ng2-semantic-ui/tree/master"
   },
   "scripts": {
     "build": "npm run lint && npm run compile && npm run package:lib",
