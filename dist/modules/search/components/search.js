@@ -17,6 +17,7 @@ var SuiSearch = (function () {
         var _this = this;
         this._element = _element;
         this._localizationService = _localizationService;
+        this._inputValue = false;
         this.dropdownService = new DropdownService();
         this.searchService = new SearchService();
         this.onLocaleUpdate();
@@ -49,6 +50,13 @@ var SuiSearch = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(SuiSearch.prototype, "inputValue", {
+        set: function (query) {
+            this._inputValue = (query == '' || query == null) ? false : query;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(SuiSearch.prototype, "localeValues", {
         get: function () {
             return this._localizationService.override(this._localeValues, this.localeOverrides);
@@ -58,10 +66,16 @@ var SuiSearch = (function () {
     });
     Object.defineProperty(SuiSearch.prototype, "query", {
         get: function () {
-            return this.searchService.query;
+            if (this._inputValue) {
+                return this._inputValue;
+            }
+            else {
+                return this.searchService.query;
+            }
         },
         set: function (query) {
             var _this = this;
+            this._inputValue = false;
             this.selectedResult = undefined;
             // Initialise a delayed search.
             this.searchService.updateQueryDelayed(query, function () {
@@ -218,6 +232,11 @@ __decorate([
     __metadata("design:type", String),
     __metadata("design:paramtypes", [String])
 ], SuiSearch.prototype, "placeholder", null);
+__decorate([
+    Input(),
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [String])
+], SuiSearch.prototype, "inputValue", null);
 __decorate([
     Input(),
     __metadata("design:type", Array),

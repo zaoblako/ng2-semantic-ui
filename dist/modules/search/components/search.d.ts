@@ -12,12 +12,14 @@ export declare class SuiSearch<T> implements AfterViewInit, OnDestroy {
     private _localizationService;
     dropdownService: DropdownService;
     searchService: SearchService<T, T>;
+    private _inputValue;
     private _menu;
     private _searchClasses;
     readonly isActive: boolean;
     hasIcon: boolean;
     private _placeholder;
     placeholder: string;
+    inputValue: string;
     private _localeValues;
     localeOverrides: RecursivePartial<ISearchLocaleValues>;
     readonly localeValues: ISearchLocaleValues;
